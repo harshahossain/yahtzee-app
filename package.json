@@ -1,14 +1,18 @@
 {
   "name": "yahtzee",
   "version": "0.1.0",
+  "homepage": "https://harshahossain.github.io/yahtzee-app",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^10.4.16",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -17,6 +21,7 @@
     "@fortawesome/fontawesome-free": "^6.4.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
-    "enzyme-to-json": "^3.3.5"
+    "enzyme-to-json": "^3.3.5",
+    "gh-pages": "^6.0.0"
   }
 }
